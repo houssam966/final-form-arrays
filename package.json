@@ -12,6 +12,7 @@
   "scripts": {
     "start": "nps",
     "test": "nps test",
+    "build": "react-scripts build",
     "precommit": "lint-staged && npm start validate"
   },
   "author": "Erik Rasmussen <rasmussenerik@gmail.com> (http://github.com/erikras)",
