@@ -9,6 +9,7 @@ import remove from './remove'
 import removeBatch from './removeBatch'
 import shift from './shift'
 import swap from './swap'
+import duplicate from './duplicate'
 import unshift from './unshift'
 import update from './update'
 
@@ -22,6 +23,7 @@ const mutators: { [string]: Mutator<any> } = {
   removeBatch,
   shift,
   swap,
+  duplicate,
   unshift,
   update
 }

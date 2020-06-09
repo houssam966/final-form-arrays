@@ -16,6 +16,7 @@ export type Mutators = {
   removeBatch: (name: string, indexes: Array<number>) => any,
   shift: (name: string) => any,
   swap: (name: string, indexA: number, indexB: number) => void,
+  duplicate: (name: string, index: number) => void,
   update: (name: string, index: number, value: any) => void,
   unshift: (name: string, value: any) => void
 }
