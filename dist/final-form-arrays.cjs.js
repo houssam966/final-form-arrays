@@ -390,7 +390,6 @@ var swap = function swap(_ref, state, _ref2) {
 };
 
 //      
-
 var duplicate = function duplicate(_ref, state, _ref2) {
   var name = _ref[0],
       index = _ref[1];
@@ -399,27 +398,7 @@ var duplicate = function duplicate(_ref, state, _ref2) {
     var copy = [].concat(array || []);
     var a = copy[index];
     return array ? [].concat(array, [a]) : [a];
-  }); // const backup = { ...state.fields }
-  //
-  // // now we have increment any higher indexes
-  // const pattern = new RegExp(`^${escapeRegexTokens(name)}\\[(\\d+)\\](.*)`)
-  //
-  // // we need to increment high indices first so
-  // // lower indices won't overlap
-  // Object.keys(state.fields)
-  //   .sort()
-  //   .reverse()
-  //   .forEach(key => {
-  //     const tokens = pattern.exec(key)
-  //     if (tokens) {
-  //       const fieldIndex = Number(tokens[1])
-  //       if (fieldIndex >= index) {
-  //         // inc index one higher
-  //         const incrementedKey = `${name}[${fieldIndex + 1}]${tokens[2]}`
-  //         moveFieldState(state, backup[key], incrementedKey)
-  //       }
-  //     }
-  //   })
+  });
 };
 
 //      
